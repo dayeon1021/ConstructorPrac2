@@ -13,17 +13,25 @@ namespace ConstructorPrac2
             {
                 Console.WriteLine("부모 생성자 호출~!");
             }
+            public Parent(int number)
+            {
+                Console.WriteLine("부모 생성자~!~!~!~!, number = " + number);
+            }
+            public Parent(string str)
+            {
+                Console.WriteLine("부모 생성자~!~!~!~, str = " + str);
+            }
         }
         class Child : Parent
         {
-            public Child()
+            public Child(String s):base(s)
             {
                 Console.WriteLine("자식 생성자 호출~~!");
             }
         }
         static void Main(string[] args)
         {
-            Child c = new Child();
+            Child c = new Child("str입니다");
         }
     }
 }
