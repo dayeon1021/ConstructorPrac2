@@ -11,14 +11,14 @@ namespace ConstructorPrac2
         class Parent{
             public Parent()
             {
-                Console.WriteLine("부모 생성자 호출");
+                Console.WriteLine("부모 생성자 호출~!");
             }
         }
         class Child : Parent
         {
             public Child()
             {
-                Console.WriteLine("자식 생성자 호출");
+                Console.WriteLine("자식 생성자 호출~~!");
             }
         }
         static void Main(string[] args)
